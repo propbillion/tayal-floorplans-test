@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-<title>Mahalaxmi Pimpri — Floor Plan Mastery Exam</title>
+<title>Tayal Envogue 2.0 — Floor Plan Exam (Re-Test)</title>
 <style>
   :root{
     --bg:#fbfbfd;
@@ -15,7 +15,7 @@
     --green:#1d7a3e;
     --red:#c7372f;
     --card:#ffffff;
-    --radius:18px;
+    --radius:20px;
   }
   *{box-sizing:border-box;}
   html,body{margin:0;padding:0;}
@@ -30,23 +30,28 @@
 
   /* ---------- HERO ---------- */
   .hero{
-    padding:64px 0 40px;
+    padding:76px 0 46px;
     text-align:center;
     border-bottom:1px solid var(--line);
+    background:radial-gradient(ellipse 60% 100% at 50% 0%, rgba(0,113,227,.05), transparent 70%);
   }
   .eyebrow{
     font-size:13px;
     font-weight:600;
-    letter-spacing:.06em;
+    letter-spacing:.08em;
     text-transform:uppercase;
     color:var(--blue);
-    margin-bottom:10px;
+    margin-bottom:12px;
   }
   .hero h1{
-    font-size:clamp(32px,5vw,48px);
+    font-size:clamp(34px,5.5vw,52px);
     font-weight:700;
-    letter-spacing:-0.015em;
-    margin:0 0 12px;
+    letter-spacing:-0.022em;
+    margin:0 0 14px;
+    background:linear-gradient(180deg,#1d1d1f 0%, #3a3a3d 100%);
+    -webkit-background-clip:text;
+    background-clip:text;
+    -webkit-text-fill-color:transparent;
   }
   .hero p{
     font-size:19px;
@@ -59,9 +64,10 @@
   .start-card{
     background:var(--card);
     border-radius:var(--radius);
-    padding:32px;
+    padding:36px;
     margin:36px 0;
-    box-shadow:0 1px 2px rgba(0,0,0,.04),0 8px 30px rgba(0,0,0,.05);
+    border:1px solid rgba(0,0,0,.04);
+    box-shadow:0 2px 4px rgba(0,0,0,.03),0 16px 40px rgba(0,0,0,.06);
   }
   .field{margin-bottom:20px;}
   .field label{
@@ -106,17 +112,18 @@
     color:#fff;
     border:none;
     border-radius:980px;
-    padding:14px 30px;
+    padding:15px 30px;
     font-size:17px;
     font-weight:600;
     cursor:pointer;
     width:100%;
-    transition:background .15s ease, transform .1s ease;
+    transition:background .2s cubic-bezier(.4,0,.2,1), transform .15s cubic-bezier(.4,0,.2,1), box-shadow .2s ease;
     font-family:inherit;
+    box-shadow:0 1px 2px rgba(0,113,227,.15);
   }
-  .btn-primary:hover{background:var(--blue-dark);}
-  .btn-primary:active{transform:scale(.985);}
-  .btn-primary:disabled{background:#c8c8ca;cursor:not-allowed;}
+  .btn-primary:hover{background:var(--blue-dark); box-shadow:0 4px 14px rgba(0,113,227,.28); transform:translateY(-1px);}
+  .btn-primary:active{transform:scale(.985) translateY(0);}
+  .btn-primary:disabled{background:#c8c8ca;cursor:not-allowed;box-shadow:none;transform:none;}
 
   .btn-secondary{
     display:inline-flex;
@@ -206,8 +213,11 @@
     border-radius:var(--radius);
     padding:26px 26px 20px;
     margin-bottom:16px;
-    box-shadow:0 1px 2px rgba(0,0,0,.04),0 6px 20px rgba(0,0,0,.04);
+    border:1px solid rgba(0,0,0,.04);
+    box-shadow:0 1px 2px rgba(0,0,0,.03),0 10px 26px rgba(0,0,0,.045);
+    transition:box-shadow .2s ease;
   }
+  .q-card:hover{box-shadow:0 2px 6px rgba(0,0,0,.05),0 14px 34px rgba(0,0,0,.07);}
   .q-meta{
     display:flex;
     justify-content:space-between;
@@ -241,17 +251,18 @@
     display:flex;
     align-items:flex-start;
     gap:12px;
-    padding:13px 16px;
+    padding:14px 16px;
     border:1.5px solid var(--line);
-    border-radius:12px;
+    border-radius:13px;
     cursor:pointer;
-    transition:border-color .12s ease, background .12s ease;
+    transition:border-color .15s cubic-bezier(.4,0,.2,1), background .15s cubic-bezier(.4,0,.2,1), transform .1s ease;
     font-size:15.5px;
   }
-  .option:hover{background:#f5f5f7;}
+  .option:hover{background:#f5f5f7; border-color:#b8b8bd;}
   .option.selected{
     border-color:var(--blue);
     background:#eef6ff;
+    box-shadow:0 0 0 1px var(--blue);
   }
   .option input{accent-color:var(--blue);margin-top:2px;flex-shrink:0;}
   .option .opt-letter{
@@ -479,9 +490,9 @@
 <div id="startScreen">
   <div class="hero">
     <div class="wrap">
-      <div class="eyebrow">PropBillion · Mahalaxmi Pimpri</div>
-      <h1>Mahalaxmi Pimpri — Floor Plan Mastery Exam</h1>
-      <p>Towers A2, A3 &amp; B3. Tests exact carpet/saleable areas, room dimensions, floor-category variations (1st Residential, Typical, Refuge, Fire Break Tank), and known data gaps. 38 questions. 3 marks each. 114 marks total.</p>
+      <div class="eyebrow">PropBillion · Tayal Envogue 2.0 · Re-Test</div>
+      <h1>Floor Plan Exam — Wing K1 &amp; K2</h1>
+      <p>Fresh set of questions — carpet areas, room dimensions, and the refuge-floor logic across Wing K1 and Wing K2. 50 questions. 2 marks each. 100 marks total.</p>
     </div>
   </div>
 
@@ -498,10 +509,10 @@
 
       <div class="rules">
         <div><b>⏱ This is a 20-minute exam.</b> Timer starts the moment you click Start Exam and auto-submits your test when it hits zero.</div>
-        <div><b>Covers Towers A2, A3 and B3</b> — exact carpet/saleable areas, room-wise dimensions, and the difference between 1st Residential Floor, Typical Floor, Refuge Floor, and Fire Break Tank Floor variants of the same unit. Also covers what data is NOT available yet (no costing sheet). Wrong area or floor-category quoted to a client is a credibility risk, not a typo.</div>
-        <div><b>38 hard questions</b> — exact numbers matter here. Read carefully.</div>
-        <div><b>3 marks</b> per question. Total <b>114 marks</b>.</div>
-        <div>No going back once submitted.</div>
+        <div><b>This is a re-test with a completely fresh question set.</b> Covers Wing K1 &amp; K2 — carpet areas, room-wise dimensions, unit counts, and the refuge-floor exceptions. Wrong area or floor-category quoted to a client is a credibility risk, not a typo.</div>
+        <div><b>50 questions</b>, simple language, but exact numbers matter. Read carefully.</div>
+        <div><b>2 marks</b> per question. Total <b>100 marks</b>.</div>
+        <div><b>Passing marks: 85%.</b> No going back once submitted.</div>
         <div>Your score is shown right after you submit. To see the correct/wrong answer breakdown, a passcode is needed.</div>
       </div>
 
@@ -575,7 +586,7 @@
 
     <div id="reviewUnlockedContent" class="hidden">
       <div class="filter-tabs">
-        <div class="filter-tab active" data-filter="all">All 38</div>
+        <div class="filter-tab active" data-filter="all">All 50</div>
         <div class="filter-tab" data-filter="wrong">Wrong Only</div>
         <div class="filter-tab" data-filter="correct">Correct Only</div>
       </div>
@@ -598,53 +609,65 @@
    CONFIG — fill in before deploying
    ============================================================ */
 const OWNER_WHATSAPP_NUMBER = "918857090799"; // owner's WhatsApp number, country code + number, no + no spaces
-const PASS_THRESHOLD = 91; // marks out of 114 (80%) considered "Go-Live" pass
-const CONDITIONAL_THRESHOLD = 68; // marks out of 114 (60%) considered "Conditional"
+const PASS_THRESHOLD = 85; // marks out of 100 (85%) considered "Go-Live" pass
+const CONDITIONAL_THRESHOLD = 60; // marks out of 100 (60%) considered "Conditional"
 const EXAM_DURATION_SECONDS = 20 * 60; // 20 minute timer
-const REVIEW_PASSCODE = "dragon123"; // passcode required to view detailed correct/wrong answer review
+const REVIEW_PASSCODE = "123dragon"; // passcode required to view detailed correct/wrong answer review
 
 /* ============================================================
    QUESTION BANK — 50 questions, 2 marks each
    ============================================================ */
 const QUESTIONS = [
-{tag:"Tower A3", q:"Tower A3 Unit 1 (4BHK) ka carpet area aur saleable area kitna hai?", opts:["Carpet 2410, Saleable 3374","Carpet 2609, Saleable 3652","Carpet 1911, Saleable 2675","Carpet 3051, Saleable 4271"], correct:0, explain:"A3 Unit 1 (4BHK) ka carpet 2410 sq.ft aur saleable 3374 sq.ft hai.", page:"Mahalaxmi Pimpri — Tower A3 Data"},
-{tag:"Tower A3", q:"Tower A3 Unit 2 (4BHK) ka carpet area kitna hai — Unit 1 se bada ya chhota?", opts:["2410 sq.ft, Unit 1 se chhota","2609 sq.ft, Unit 1 se bada","1911 sq.ft, sabse chhota","3051 sq.ft, sabse bada"], correct:1, explain:"A3 Unit 2 ka carpet 2609 sq.ft hai, jo Unit 1 (2410 sq.ft) se bada hai. Saleable bhi bada hai — 3652 sq.ft.", page:"Mahalaxmi Pimpri — Tower A3 Data"},
-{tag:"Tower A3", q:"Tower A3 ka floor plate configuration kya hai, aur kitne floor types is data mein diye gaye hain?", opts:["Sirf Refuge Floor data hai","Sirf 1st Residential Floor ka data hai","2B+1G+2P+34F, sirf Typical/Residential floor ka data hai (2 x 4BHK mirror units)","Sirf Fire Break Tank Floor ka data hai"], correct:2, explain:"A3 config 2B+1G+2P+34F hai. Is extract mein sirf Typical/Residential floor plate diya gaya hai — jisme 2 mirror-layout 4BHK units hain (Unit 1 aur Unit 2), koi refuge ya fire-tank floor A3 ke liye specify nahi kiya gaya.", page:"Mahalaxmi Pimpri — Tower A3 Data"},
-{tag:"Tower A3 Rooms", q:"A3 Unit 1 mein Living Room ka size kya hai?", opts:["24'11\" x 17'11\"","12'0\" x 17'11\"","12'4\" x 17'11\"","23'0\" x 17'1\""], correct:3, explain:"A3 Unit 1 ka Living Room 23'0\" x 17'1\" hai. Unit 2 mein yeh bada hai — 24'11\" x 17'11\".", page:"Mahalaxmi Pimpri — Tower A3 Data"},
-{tag:"Tower A3 Rooms", q:"A3 Unit 1 mein Puja room ka size kya hai?", opts:["4'11\" x 11'0\"","6'11\" x 10'8\"","5'1\" x 8'8\"","4'5\" x 7'9\""], correct:0, explain:"A3 Unit 1 ka Puja room 4'11\" x 11'0\" hai. Unit 2 mein yeh bada hai — 6'11\"x10'8\".", page:"Mahalaxmi Pimpri — Tower A3 Data"},
-{tag:"Tower B3", q:"Tower B3 ke 1st Residential Floor (Unit 101) mein 3BHK ka carpet area kitna hai?", opts:["1335 sq.ft","1508 sq.ft","1248 sq.ft","3051 sq.ft"], correct:1, explain:"B3 1st Residential Floor Unit 101 (3BHK) ka carpet 1508 sq.ft, saleable 2111 sq.ft hai.", page:"Mahalaxmi Pimpri — Tower B3 Data"},
-{tag:"Tower B3", q:"Tower B3 ke 1st Residential Floor (Unit 102) mein 2BHK ka carpet area kitna hai?", opts:["1143 sq.ft","1206 sq.ft","1248 sq.ft","994 sq.ft"], correct:2, explain:"B3 1st Residential Floor Unit 102 (2BHK) ka carpet 1248 sq.ft, saleable 1747 sq.ft hai.", page:"Mahalaxmi Pimpri — Tower B3 Data"},
-{tag:"Tower B3", q:"Tower B3 ke 1st Residential Floor (Unit 103) mein 4BHK ka carpet area kitna hai — poore project ka sabse bada unit?", opts:["2609 sq.ft","1911 sq.ft","2410 sq.ft","3051 sq.ft"], correct:3, explain:"B3 Unit 103 (4BHK, 1st Residential Floor) ka carpet 3051 sq.ft, saleable 4271 sq.ft hai — poore extraction mein sabse bada single unit.", page:"Mahalaxmi Pimpri — Tower B3 Data"},
-{tag:"Tower B3", q:"B3 ke Typical Floor par wahi 3BHK (jo 1st Res. Floor par 1508 sq.ft tha) ka carpet area kitna reduce hokar rehta hai, aur kyun?", opts:["1335 sq.ft — kyunki typical floor par exclusive terrace nahi hoti","1508 sq.ft — koi farak nahi padta","1143 sq.ft — refuge deduction ki wajah se","1600 sq.ft — extra area add hoti hai"], correct:0, explain:"Typical floor par same room-layout ka 3BHK 1335 sq.ft ka ho jaata hai (1508 se kam) kyunki 1st Residential Floor wale unit ko exclusive terrace milta hai jo typical floors par nahi hota.", page:"Mahalaxmi Pimpri — Tower B3 Data"},
-{tag:"Tower B3", q:"B3 mein Typical Floor par ek doosra 4BHK bhi hai (1590 sq.ft) jo Unit 103 wale 4BHK (3051→2609 typical par) se alag hai. Iska matlab B3 mein kitne alag 4BHK layouts hain?", opts:["Sirf ek 4BHK layout hai poore B3 mein","Do alag 4BHK layouts hain — ek 1590 sq.ft wala (chhota), doosra 3051/2609 sq.ft wala (bada)","Teen alag 4BHK layouts hain","4BHK B3 mein hai hi nahi"], correct:1, explain:"B3 mein 2 distinct 4BHK configurations hain — ek chhota (1590 sq.ft typical floor par, apna alag room-grid), doosra bada (3051 sq.ft 1st Res. Floor, jo typical floor par 2609 sq.ft ho jaata hai). Client ko quote karte waqt confirm karna zaroori hai kaunsa 4BHK poocha ja raha hai.", page:"Mahalaxmi Pimpri — Tower B3 Data"},
-{tag:"Tower B3", q:"B3 ke Refuge Floor par 2BHK ka carpet area kitna hai — 1st Res. Floor wale 2BHK (1248) se kitna kam?", opts:["1248 sq.ft, koi farak nahi","994 sq.ft, bahut kam","1143 sq.ft, thoda kam refuge deduction ki wajah se","1600 sq.ft, bada"], correct:2, explain:"B3 Refuge Floor 2BHK ka carpet 1143 sq.ft hai (1248 se kam) — refuge area deduction ki wajah se, same room sizes hain par kuch area refuge ke liye set-aside hota hai.", page:"Mahalaxmi Pimpri — Tower B3 Data"},
-{tag:"Tower B3", q:"B3 ki Fire Break Tank Floor (top floor) par kya hota hai?", opts:["Poori floor par normal residential units hote hain","Koi bhi residential unit nahi hota, poori floor utility ke liye hai","Fire Break Tank Floor sirf commercial use ke liye hai","Sirf 3BHK aur 4BHK units hi hote hain (same jaisa typical/refuge), baaki floor plate Fire Tank + Pump Room + Domestic Tank ke liye reserved hota hai — koi 2BHK nahi"], correct:3, explain:"Fire Break Tank Floor par sirf 3BHK (1335 sq.ft) aur 4BHK (2609 sq.ft) units hote hain — 2BHK yahan available nahi hai. Baaki floor plate Fire Tank, Pump Room, aur Domestic Tank ke liye reserved hai.", page:"Mahalaxmi Pimpri — Tower B3 Data"},
-{tag:"Tower A2", q:"Tower A2 ke 1st Residential Floor (Unit 101) mein 3BHK ka carpet area kitna hai?", opts:["1594 sq.ft","1626 sq.ft","1911 sq.ft","1206 sq.ft"], correct:0, explain:"A2 Unit 101 (3BHK, 1st Res. Floor) ka carpet 1594 sq.ft, saleable 2232 sq.ft hai.", page:"Mahalaxmi Pimpri — Tower A2 Data"},
-{tag:"Tower A2", q:"Tower A2 ke 1st Residential Floor mein Unit 103 (3BHK) ka carpet area kitna hai — Unit 101 se alag kyun?", opts:["1594 sq.ft, Unit 101 jaisa hi","1626 sq.ft — alag room configuration ki wajah se, thoda bada","1206 sq.ft, chhota","1911 sq.ft, sabse bada"], correct:1, explain:"A2 Unit 103 (3BHK) ka carpet 1626 sq.ft hai — Unit 101 (1594 sq.ft) se alag, kyunki dono ka room-wise layout different hai chahe dono 3BHK hi kyun na hon.", page:"Mahalaxmi Pimpri — Tower A2 Data"},
-{tag:"Tower A2", q:"Tower A2 ke 1st Residential Floor mein Unit 104 (4BHK) ka carpet area kitna hai?", opts:["1682 sq.ft","1625 sq.ft","1911 sq.ft","2410 sq.ft"], correct:2, explain:"A2 Unit 104 (4BHK, 1st Res. Floor) ka carpet 1911 sq.ft, saleable 2675 sq.ft hai — A2 ka sabse bada unit.", page:"Mahalaxmi Pimpri — Tower A2 Data"},
-{tag:"Tower A2", q:"Tower A2 ke Typical Floor par 3BHK ke do alag carpet areas diye gaye hain — 1261 sq.ft aur 1232 sq.ft. Yeh kyun alag hain?", opts:["Yeh ek hi unit hai, printing error hai","1232 sq.ft galat number hai, ignore karna chahiye","Dono same room layout hain, sirf floor number alag hai","Yeh do alag room-configurations hain — 1261 sq.ft wala Unit 103 (1626 sq.ft) jaisa layout hai typical floor par, 1232 sq.ft wala apna alag distinct room-grid rakhta hai"], correct:3, explain:"A2 Typical floor par 2 alag 3BHK layouts hain — ek Unit 103 ka reduced version (1261 sq.ft), doosra apna independent room-grid (1232 sq.ft, alag Toilet/Dining sizes ke saath). In dono ko confuse na karein client ko quote karte waqt.", page:"Mahalaxmi Pimpri — Tower A2 Data"},
-{tag:"Tower A2", q:"Tower A2 ke Refuge Floor par 2BHK ka carpet area kitna hai — 1st Res. Floor wale 2BHK (1206) se kitna kam?", opts:["994 sq.ft, kaafi kam refuge deduction ki wajah se","1206 sq.ft, koi farak nahi","1143 sq.ft, thoda kam","1600 sq.ft, bada"], correct:0, explain:"A2 Refuge Floor 2BHK ka carpet 994 sq.ft hai — 1st Res. Floor wale 2BHK (1206 sq.ft) se kaafi kam, refuge area deduction ki wajah se. Note: yeh A2 ka number hai, B3 ke refuge 2BHK (1143 sq.ft) se alag — dono towers ke numbers mix mat karo.", page:"Mahalaxmi Pimpri — Tower A2 Data"},
-{tag:"Tower A2", q:"Tower A2 ke Refuge Floor par ek 3BHK hai jiska carpet 1444 sq.ft hai — yeh Typical floor ke 3BHK counterparts (1261/1232) se alag kyun hai?", opts:["Yeh Typical floor ke unhi units jaisa hai, area sirf refuge deduction se kam hua","Yeh apna independent unit hai jo sirf Refuge Floor par exist karta hai, Typical floor ke 3BHK layouts se alag","Yeh printing error hai","1444 sq.ft actually 2BHK hai, 3BHK nahi"], correct:1, explain:"A2 Refuge Floor ka 1444 sq.ft wala 3BHK ek unique unit hai jo sirf refuge floor par hi exist karta hai — yeh Typical floor ke 1261/1232 sq.ft wale 3BHK layouts se alag hai, unka reduced version nahi hai.", page:"Mahalaxmi Pimpri — Tower A2 Data"},
-{tag:"Tower A2", q:"Tower A2 ki Fire Break Tank Floor par kaunse unit types available hain?", opts:["Sirf 2BHK","Sirf 4BHK","4BHK (1682 sq.ft aur 1625 sq.ft) aur 3BHK (1261 sq.ft) — 2BHK nahi","Saare unit types available hain including 2BHK"], correct:2, explain:"A2 Fire Break Tank Floor par sirf 4BHK (dono variants — 1682 aur 1625 sq.ft) aur 3BHK (1261 sq.ft) available hain — 2BHK yahan nahi hai, jaisa B3 mein bhi tha.", page:"Mahalaxmi Pimpri — Tower A2 Data"},
-{tag:"Cross-Tower", q:"Common floor plate configuration konsa hai jo teeno towers (A2, A3, B3) mein same hai?", opts:["Alag-alag hai har tower ka","Sirf A2 aur A3 same hain","Sirf B3 alag hai baaki dono same","2B+1G+2P+34F — sabhi teeno towers mein"], correct:3, explain:"Teeno towers — A2, A3, aur B3 — sabka config same hai: 2B+1G+2P+34F (2 Basement + 1 Ground + 2 Podium + 34 Floors).", page:"Mahalaxmi Pimpri — Cross-Tower Comparison"},
-{tag:"Cross-Tower", q:"Teeno towers mein sabse bada single unit (carpet area ke hisaab se) kaunsa hai, aur kis tower mein hai?", opts:["B3 Unit 103, 3051 sq.ft — poore data mein sabse bada","A3 Unit 2, 2609 sq.ft","A2 Unit 104, 1911 sq.ft","B3 typical floor 4BHK, 1590 sq.ft"], correct:0, explain:"B3 Unit 103 (4BHK, 1st Residential Floor) 3051 sq.ft carpet ke saath poore extraction ka sabse bada single unit hai — A3 (max 2609), A2 (max 1911) dono se bada.", page:"Mahalaxmi Pimpri — Cross-Tower Comparison"},
-{tag:"Cross-Tower", q:"Kaunsa tower apni 'Typical Floor' data mein explicitly 2BHK unit list nahi karta (sirf 1st Res. Floor aur Refuge Floor mein 2BHK hai)?", opts:["A2","B3 — Typical Floor ke liye sirf 3BHK aur 4BHK hi diye gaye hain is extract mein, 2BHK nahi","A3","Sabhi towers mein Typical Floor par 2BHK hai"], correct:1, explain:"B3 ke Typical Floor section mein sirf 3BHK aur 4BHK hi listed hain — 2BHK sirf 1st Residential Floor (1248 sq.ft) aur Refuge Floor (1143 sq.ft) mein diya gaya hai, Typical floor ka number is extract mein nahi hai.", page:"Mahalaxmi Pimpri — Cross-Tower Comparison"},
-{tag:"Data Gaps", q:"In 4 uploaded PDFs mein kaunsa important data GAP hai jo client ko final price quote karne ke liye chahiye hoga?", opts:["Koi gap nahi hai, sab data available hai","Sirf room dimensions missing hain","Costing/pricing sheet — rate per sq.ft, payment schedule, floor rise, PLC — kuch bhi nahi hai in files mein, sirf carpet+saleable area data hai","Sirf carpet area missing hai"], correct:2, explain:"Explicit gap note kiya gaya hai: Costing/pricing sheet kisi bhi file mein nahi hai. Rate per sq.ft, payment schedule, floor rise, PLC — sab absent hai. Sirf carpet area, saleable area, aur room dimensions available hain.", page:"Mahalaxmi Pimpri — Data Gaps"},
-{tag:"Data Gaps", q:"Agar customer poochta hai 'ground floor par kya amenities hain' — SEM ko is data ke hisaab se kya jawaab dena chahiye?", opts:["Turant sab amenities list bata dena chahiye","Ground floor par koi amenities nahi hain is project mein","Amenities ka data carpet area sheet mein hi hota hai","Yeh data in 4 files mein available nahi hai — Ground floor/podium/amenity layouts is extraction mein nahi hain, SEM ko confirm karke baad mein batana chahiye"], correct:3, explain:"Gaps section explicitly kehta hai: 'Ground floor / podium / amenity layouts — not in these 4 files.' SEM ko honestly bolna chahiye ki yeh info abhi verify karke deni hai, galat guess nahi karna chahiye.", page:"Mahalaxmi Pimpri — Data Gaps"},
-{tag:"Scenario", q:"Ek customer B3 tower mein 4BHK poochta hai. SEM ke paas do options hain — 1590 sq.ft wala aur 3051/2609 sq.ft wala. SEM ko kya karna chahiye quote karne se pehle?", opts:["Customer se confirm karna chahiye ki wo kaunsa specific 4BHK layout dekh raha hai (floor number/unit number ke hisaab se), kyunki B3 mein 2 bilkul alag 4BHK configurations hain","Jo bhi pehla number yaad aaye wahi bata dena","Dono sizes ka average bata dena","Sirf bada wala hi quote karna chahiye hamesha"], correct:0, explain:"Jaisa data mein clear hai, B3 mein 4BHK ke 2 distinct configurations hain (1590 sq.ft chhota, 3051/2609 sq.ft bada). Bina confirm kiye galat size bata dena credibility risk hai — SEM ko specific floor/unit reference se confirm karna chahiye.", page:"Mahalaxmi Pimpri — Applied Scenario"},
-{tag:"Scenario", q:"Ek customer sabse bada unit dekhna chahta hai poore project mein, budget koi issue nahi hai. SEM ko kaunsa unit recommend karna chahiye?", opts:["A3 Unit 2 (2609 sq.ft)","B3 Unit 103, 1st Residential Floor 4BHK (3051 sq.ft carpet, 4271 sq.ft saleable) — poore extraction ka sabse bada","A2 Unit 104 (1911 sq.ft)","B3 Typical floor 4BHK (1590 sq.ft)"], correct:1, explain:"B3 Unit 103 (4BHK, 1st Residential Floor) 3051 sq.ft carpet ke saath sabse bada single unit hai poore data set mein — yehi recommend karna chahiye agar customer sabse bada unit dhoondh raha hai.", page:"Mahalaxmi Pimpri — Applied Scenario"},
-{tag:"Room Detail", q:"B3 ke 1508 sq.ft wale 3BHK (1st Res. Floor) mein Dry Balcony ka size kya hai?", opts:["9'6\" x 4'11\"","4'5\" x 7'5\"","8'10\" x 4'11\"","5'5\" x 7'5\""], correct:2, explain:"B3 1508 sq.ft 3BHK ka Dry Balcony 8'10\" x 4'11\" hai.", page:"Mahalaxmi Pimpri — Tower B3 Data"},
-{tag:"Room Detail", q:"A2 Unit 104 (4BHK, 1911 sq.ft) mein total kitne toilets hain?", opts:["2 toilets","3 toilets","5 toilets","4 toilets"], correct:3, explain:"A2 Unit 104 mein 4 toilets hain — Toilet 1, Toilet 2, Toilet 3, aur Toilet 4 (alag-alag sizes ke saath), plus ek W/W (wash/wardrobe) area.", page:"Mahalaxmi Pimpri — Tower A2 Data"},
-{tag:"Room Detail", q:"B3 ke 3051 sq.ft wale 4BHK mein Living Room ka size kya hai — yeh poore data set mein sabse bada Living Room hai?", opts:["24'11\" x 17'11\"","23'0\" x 17'1\"","12'0\" x 17'11\"","12'4\" x 17'11\""], correct:0, explain:"B3 3051 sq.ft 4BHK ka Living Room 24'11\" x 17'11\" hai — A3 Unit 2 ke Living Room jaisa hi (dono units same room-list share karte hain), poore data mein sabse bada Living Room.", page:"Mahalaxmi Pimpri — Tower B3 Data"},
-{tag:"Room Detail", q:"A3 Unit 2 mein kitne 'W.I.W' (Walk-In Wardrobe) areas hain?", opts:["1","2","3","Koi nahi"], correct:1, explain:"A3 Unit 2 mein 2 W.I.W areas hain — W.I.W 1 (11'2\"x5'7\") aur W.I.W 2 (6'9\"x9'4\") — dono Master aur doosre bedroom se attached.", page:"Mahalaxmi Pimpri — Tower A3 Data"},
-{tag:"Saleable vs Carpet", q:"B3 ke 3051 sq.ft carpet wale 4BHK ka saleable area kitna hai, aur yeh ratio kya darshata hai?", opts:["3374 sq.ft — carpet se thoda zyada","3051 sq.ft — same as carpet","4271 sq.ft — carpet se lagbhag 1220 sq.ft zyada, common area share ki wajah se","2609 sq.ft — carpet se kam"], correct:2, explain:"3051 sq.ft carpet ka saleable 4271 sq.ft hai — farak lagbhag 1220 sq.ft hai, jo building ke common areas (lobby, lift, staircase, amenities) ka proportionate share represent karta hai.", page:"Mahalaxmi Pimpri — Tower B3 Data"},
-{tag:"Refuge Concept", q:"In teeno towers ke data ke hisaab se, Refuge Floor par carpet area typical/1st-res floor se kam kyun hota hai?", opts:["Kyunki refuge floor par kam log rehte hain","Yeh sirf pricing strategy hai, koi technical reason nahi","Refuge floor units chhote design kiye jaate hain shuru se hi","Refuge floor par ek hissa fire-safety refuge area ke liye reserve hota hai (RERA/fire-safety norm), jisse us floor ke units ka net saleable/carpet area thoda kam ho jaata hai"], correct:3, explain:"Refuge floors par ek designated fire-safety refuge area (mandatory building-safety norm) rakhna padta hai, jiski wajah se us floor ke residential units ka net carpet/saleable area standard floors se kam ho jaata hai — jaisa A2 (1206→994) aur B3 (1248→1143) dono mein consistently dikh raha hai.", page:"Mahalaxmi Pimpri — Cross-Tower Comparison"},
-{tag:"Data Precision", q:"Is extraction mein measurement units kaunse hain, aur kya explicitly drop kiya gaya hai?", opts:["Sab kuch feet mein hai — meter measurements explicitly drop kiye gaye hain jaisa demand kiya gaya tha","Sirf meter mein diye gaye hain","Dono meter aur feet mixed hain","Sirf sq.m mein diya gaya hai"], correct:0, explain:"Note mein clearly likha hai: 'meter measurements dropped, feet only as demanded.' Sabhi room dimensions aur areas is extraction mein sirf feet/sq.ft mein hain.", page:"Mahalaxmi Pimpri — Data Gaps"},
-{tag:"Tower A2", q:"A2 ke 1st Residential Floor mein Unit 102 (2BHK) ka carpet area kitna hai?", opts:["1594 sq.ft","1206 sq.ft","994 sq.ft","1626 sq.ft"], correct:1, explain:"A2 Unit 102 (2BHK, 1st Res. Floor) ka carpet 1206 sq.ft, saleable 1688 sq.ft hai.", page:"Mahalaxmi Pimpri — Tower A2 Data"},
-{tag:"Tower A3", q:"A3 ka floor plate kis tarah design kiya gaya hai — kitne units per floor aur kaisa layout?", opts:["4 units per floor, saare alag design","1 unit per floor, poora floor ek hi flat","2 units per floor, dono 4BHK, ek doosre ke mirror layout mein","3 units per floor, mix BHK"], correct:2, explain:"A3 ka typical floor plate mein sirf 2 units hain — dono 4BHK, aur ek doosre ka mirror layout hai (jaisa Unit 1 aur Unit 2 ke room-lists se dikhta hai, similar par not identical sizes).", page:"Mahalaxmi Pimpri — Tower A3 Data"},
-{tag:"Tower A2", q:"A2 ke Typical Floor 3BHK (1232 sq.ft) mein Dining ka size kya hai — 1261 sq.ft wale se alag hai?", opts:["5'11\" x 10'8\", same as 1261 sq.ft wala","9'2\" x 11'6\"","8'6\" x 11'0\"","6'0\" x 10'9\" — thoda alag hai 1261 sq.ft wale (5'11\"x10'8\") se"], correct:3, explain:"1232 sq.ft wale 3BHK ka Dining 6'0\"x10'9\" hai — 1261 sq.ft wale (jo Unit 103 ka reduced version hai, Dining 5'11\"x10'8\") se thoda alag, confirm karta hai ki yeh do genuinely different layouts hain.", page:"Mahalaxmi Pimpri — Tower A2 Data"},
-{tag:"Cross-Tower", q:"Sabse chhota 2BHK unit kis tower mein hai, aur kitna carpet area hai?", opts:["A2 Refuge Floor 2BHK, 994 sq.ft","B3 Refuge Floor 2BHK, 1143 sq.ft","A2 1st Res. Floor 2BHK, 1206 sq.ft","B3 1st Res. Floor 2BHK, 1248 sq.ft"], correct:0, explain:"Sabse chhota 2BHK A2 ke Refuge Floor par hai — 994 sq.ft. Yeh saare 2BHK options (A2: 1206/994, B3: 1248/1143) mein sabse chhota hai.", page:"Mahalaxmi Pimpri — Cross-Tower Comparison"},
-{tag:"Data Precision", q:"Room dimensions ki accuracy ke baare mein extraction mein kya note diya gaya hai — kya yeh directly PDFs se aaya hai?", opts:["Yeh sirf estimate hai, koi source nahi","Source PDFs area statement sheets + floor plans se complete extraction ki gayi hai — meter measurements drop karke sirf feet mein diya gaya hai","Yeh purani costing sheet se liya gaya hai","Data internet se collect kiya gaya hai"], correct:1, explain:"Extraction note kehta hai: 'Source PDFs = area statement sheets + floor plans. NO costing sheet present.' Data directly source documents se nikala gaya hai, feet mein convert/present kiya gaya hai jaisa demand kiya gaya tha.", page:"Mahalaxmi Pimpri — Data Gaps"}
+{tag:"K1 Unit Count", q:"Wing K1 ke Series 1 (2BHK) mein total kitne units listed hain?", opts:["23 units","19 units","24 units","20 units"], correct:0, explain:"Series 1 (2BHK) mein 23 units listed hain — flat numbers 1401 se 3601 tak.", page:"Tayal Envogue — K1 Data"},
+{tag:"K1 Unit Count", q:"Wing K1 ke Series 4 (2BHK, mirror layout) mein total kitne units hain?", opts:["23 units","24 units","19 units","20 units"], correct:1, explain:"Series 4 mein 24 units hain — Series 1 se ek zyada.", page:"Tayal Envogue — K1 Data"},
+{tag:"K1 Unit Count", q:"Wing K1 ke Series 2 (3BHK) mein refuge floors exclude karne ke baad kitne units bachte hain?", opts:["23 units","20 units","19 units","24 units"], correct:2, explain:"Series 2 mein 19 units hain (4 refuge floor flats — 1702, 2202, 2702, 3202 — exclude karne ke baad).", page:"Tayal Envogue — K1 Data"},
+{tag:"K1 Unit Count", q:"Wing K1 ke Series 3 (3BHK) mein refuge floors exclude karne ke baad kitne units bachte hain?", opts:["19 units","24 units","23 units","20 units"], correct:3, explain:"Series 3 mein 20 units hain (4 refuge floor flats — 1703, 2203, 2703, 3203 — exclude karne ke baad).", page:"Tayal Envogue — K1 Data"},
+{tag:"K1 Calculation", q:"Series 1 (23 units) aur Series 4 (24 units) — dono 2BHK series — milakar total kitne 2BHK units hote hain (standard floors par)?", opts:["47","43","45","50"], correct:0, explain:"23 + 24 = 47 total 2BHK units (Series 1 aur Series 4 combined, standard floors par).", page:"Tayal Envogue — K1 Data (calculation)"},
+{tag:"K1 Site", q:"Wing K1 ka site address kis road par hai?", opts:["F.C. Road","Old Mumbai Road, Kalbhor Nagar","Baner Road","Nagar Road"], correct:1, explain:"Site address: CTS No. 4667, Old Mumbai Rd., Kalbhor Nagar, Akurdi, Pimpri-Chinchwad, Pune – 411035.", page:"Tayal Envogue — K1 Data"},
+{tag:"K1 Amenities", q:"Amenities Booklet mein numbered amenity legend mein kitne items hain?", opts:["15 items","20 items","23 items","30 items"], correct:2, explain:"Amenities booklet mein 23 numbered amenity items ki legend hai — pools, courtyards, skate park, kids zone etc.", page:"Tayal Envogue — K1 Data"},
+{tag:"K2 Ground Floor", q:"K2 ke ground floor flat 102 ka terrace size kitna hai — 4 units mein sabse chhota?", opts:["425 sq.ft","492 sq.ft","521 sq.ft","342 sq.ft"], correct:3, explain:"Flat 102 ka terrace 342 sq.ft hai — 101(425), 102(342), 103(492), 104(521) mein sabse chhota.", page:"Tayal Envogue — K2 Data"},
+{tag:"K2 Ground Floor", q:"K2 ke ground floor flat 103 ka terrace size kitna hai?", opts:["492 sq.ft","342 sq.ft","425 sq.ft","521 sq.ft"], correct:0, explain:"Flat 103 ka terrace 492 sq.ft hai.", page:"Tayal Envogue — K2 Data"},
+{tag:"K2 Ground Floor", q:"K2 ke flat 102 ka Grand Total (carpet + terrace) kitna hai?", opts:["1689 sq.ft","1607 sq.ft","1756 sq.ft","1786 sq.ft"], correct:1, explain:"Flat 102: Carpet 1265 + Terrace 342 = Grand Total 1607 sq.ft.", page:"Tayal Envogue — K2 Data"},
+{tag:"K2 Ground Floor", q:"K2 ke flat 103 ka Grand Total kitna hai?", opts:["1607 sq.ft","1689 sq.ft","1756 sq.ft","1786 sq.ft"], correct:2, explain:"Flat 103: Carpet 1265 + Terrace 492 = Grand Total 1756 sq.ft.", page:"Tayal Envogue — K2 Data"},
+{tag:"K2 Ground Floor", q:"K2 ke 4 ground floor flats (101-104) mein sabse bada Grand Total kis flat ka hai?", opts:["101","102","103","104"], correct:3, explain:"Flat 104 ka Grand Total 1786 sq.ft hai — sabse bada in charon mein (101:1689, 102:1607, 103:1756, 104:1786).", page:"Tayal Envogue — K2 Data"},
+{tag:"K2 Rooms", q:"K2 ke 3BHK mein Attached Toilet (Master) ka size kya hai?", opts:["4'6\" x 8'6\"","4'9\" x 8'0\"","4'6\" x 8'0\"","5'8\" x 5'6\""], correct:0, explain:"Master ka Attached Toilet 4'6\" x 8'6\" hai — Suite 03 ke attached toilet (4'9\"x8'0\") se alag.", page:"Tayal Envogue — K2 Data"},
+{tag:"K2 Rooms", q:"K2 ke 3BHK mein Suite 03 ke attached toilet ka size kya hai?", opts:["4'6\" x 8'6\"","4'9\" x 8'0\"","4'6\" x 8'0\"","5'8\" x 5'6\""], correct:1, explain:"Suite 03 ka attached toilet 4'9\" x 8'0\" hai.", page:"Tayal Envogue — K2 Data"},
+{tag:"K2 Rooms", q:"K2 ke 3BHK mein Common Toilet ka size kya hai?", opts:["4'6\" x 8'6\"","4'9\" x 8'0\"","4'6\" x 8'0\"","4'11\" x 8'0\""], correct:2, explain:"Common Toilet 4'6\" x 8'0\" hai.", page:"Tayal Envogue — K2 Data"},
+{tag:"K2 Rooms", q:"K2 mein Entrance Lobby ka size kya hai?", opts:["5'1\" x 4'11\"","5'7\" x 4'11\"","9'10\" x 5'9\"","5'8\" x 5'6\""], correct:3, explain:"K2 ki Entrance Lobby 5'8\" x 5'6\" hai — K1 se alag size (K1 mein 5'7\"x4'11\" ya 5'1\"x4'11\").", page:"Tayal Envogue — K2 Data"},
+{tag:"K2 Rooms", q:"K2 mein Balcony (Living) ka size kya hai — K2 ki sabse badi balcony?", opts:["15'0\" x 4'0\"","12'0\" x 4'0\"","11'8\" x 4'0\"","10'6\" x 4'6\""], correct:0, explain:"Balcony (Living) 15'0\" x 4'0\" hai — K2 ki sabse badi balcony, Balcony (Bedroom) (12'0\"x4'0\") se badi.", page:"Tayal Envogue — K2 Data"},
+{tag:"K2 Rooms", q:"K2 ke 3BHK mein Balcony (Bedroom) ka size kya hai?", opts:["15'0\" x 4'0\"","12'0\" x 4'0\"","11'8\" x 4'0\"","10'2\" x 3'0\""], correct:1, explain:"Balcony (Bedroom) 12'0\" x 4'0\" hai.", page:"Tayal Envogue — K2 Data"},
+{tag:"K2 Refuge Rooms", q:"K2 ke Refuge Floor 2BHK mein Balcony 1 ka size kya hai?", opts:["11'8\" x 4'0\"","15'0\" x 4'0\"","12'0\" x 4'0\"","10'6\" x 4'6\""], correct:2, explain:"Refuge floor 2BHK ka Balcony 1, 12'0\" x 4'0\" hai — 3BHK ke Balcony (Bedroom) jaisa hi.", page:"Tayal Envogue — K2 Data"},
+{tag:"K2 Refuge Rooms", q:"K2 ke Refuge Floor 2BHK mein Balcony 2 ka size kya hai?", opts:["12'0\" x 4'0\"","15'0\" x 4'0\"","10'2\" x 3'0\"","11'8\" x 4'0\""], correct:3, explain:"Refuge floor 2BHK ka Balcony 2, 11'8\" x 4'0\" hai.", page:"Tayal Envogue — K2 Data"},
+{tag:"K2 Refuge Rooms", q:"K2 Refuge Floor 2BHK mein Attached Toilet ka size kya hai?", opts:["4'6\" x 8'6\"","4'9\" x 8'0\"","4'6\" x 8'0\"","5'8\" x 5'6\""], correct:0, explain:"Refuge floor 2BHK ka Attached Toilet 4'6\" x 8'6\" hai — 3BHK ke Master Attached Toilet jaisa hi size.", page:"Tayal Envogue — K2 Data"},
+{tag:"K2 Refuge Floors", q:"K2 mein refuge floor kitne alag floor numbers par hai (flat series 201,701,1201... ke hisaab se)?", opts:["4 floors","7 floors","5 floors","9 floors"], correct:1, explain:"K2 refuge floors 7 hain: 201, 701, 1201, 1701, 2201, 2701, aur 3201 (aur inki 02 position bhi).", page:"Tayal Envogue — K2 Data"},
+{tag:"K2 Refuge Floors", q:"K2 mein total kitne refuge floor units hain (7 floors x 2 positions har floor par)?", opts:["7 units","10 units","14 units","20 units"], correct:2, explain:"7 refuge floors x 2 positions (01 aur 02 series) per floor = 14 total refuge units K2 mein.", page:"Tayal Envogue — K2 Data (calculation)"},
+{tag:"K1 Scenario", q:"Ek customer K1 ka flat number 1702 poochta hai. Yeh kis type ka hai?", opts:["3 BHK, 916 sq.ft","2 BHK, 800 sq.ft standard","3 BHK, 802 sq.ft","2 BHK, 802 sq.ft — floor 17 refuge hai aur position 02 affected hai"], correct:3, explain:"Floor 17 refuge floors ki list mein hai, position 02 affected hoti hai — isliye flat 1702, 2 BHK, 802 sq.ft hoga, 3 BHK nahi.", page:"Tayal Envogue — K1 Data"},
+{tag:"K1 Scenario", q:"Ek customer K1 ka flat number 2703 poochta hai. Yeh kis type ka hoga?", opts:["2 BHK, 802 sq.ft — floor 27 refuge hai aur position 03 affected hai","3 BHK, 916 sq.ft standard","2 BHK, 800 sq.ft","3 BHK, 802 sq.ft"], correct:0, explain:"Floor 27 refuge floors mein hai, position 03 bhi affected hoti hai — flat 2703, 2 BHK, 802 sq.ft hoga.", page:"Tayal Envogue — K1 Data"},
+{tag:"K1 Scenario", q:"Ek customer K1 ka flat number 3204 poochta hai (floor 32, position 04). Kya yeh refuge exception se affected hoga?", opts:["Haan, 2 BHK 802 sq.ft ho jaayega","Nahi — position 04 unaffected rehta hai, standard 2 BHK 800 sq.ft hoga chahe floor 32 refuge floor ho","Yeh 3 BHK ban jaayega","Yeh flat exist hi nahi karta"], correct:1, explain:"Position 04 refuge exception se hamesha unaffected rehta hai. Flat 3204 standard 2 BHK, 800 sq.ft hoga.", page:"Tayal Envogue — K1 Data"},
+{tag:"K1 Scenario", q:"Ek customer K1 ka flat number 1401 poochta hai (floor 14, position 01). Floor 14 refuge list mein nahi hai. Iska type kya hoga?", opts:["2 BHK, 802 sq.ft","3 BHK, 916 sq.ft","2 BHK, 800 sq.ft — standard, kyunki na floor refuge hai na position 01 kabhi affected hoti hai","Iska data available nahi hai"], correct:2, explain:"Floor 14 refuge list (17,22,27,32) mein nahi hai, aur position 01 hamesha standard rehti hai. Flat 1401 standard 2 BHK, 800 sq.ft hai.", page:"Tayal Envogue — K1 Data"},
+{tag:"K2 Scenario", q:"Ek customer K2 ka flat number 3201 poochta hai. Yeh kis type ka hoga?", opts:["3 BHK, 1265 sq.ft","2 BHK, 802 sq.ft (K1 wala number)","4 BHK","2 BHK, 1049 sq.ft — kyunki 3201 K2 ke refuge floor series mein hai"], correct:3, explain:"Flat 3201 K2 ke refuge series (201,701,1201,1701,2201,2701,3201) mein hai — 2 BHK, 1049 sq.ft hoga. Yeh K1 ke 802 sq.ft wale number se alag hai.", page:"Tayal Envogue — K2 Data"},
+{tag:"K2 Scenario", q:"Ek customer K2 ka flat number 1202 poochta hai. Yeh kis type ka hoga?", opts:["2 BHK, 1049 sq.ft — kyunki 1202, floor 1201-series ke refuge pattern mein aata hai","3 BHK, 1265 sq.ft","2 BHK, 802 sq.ft","Data available nahi hai"], correct:0, explain:"Flat 1202, 1201-series ke refuge floor pattern mein aata hai (201,701,1201...) — 2 BHK, 1049 sq.ft hoga.", page:"Tayal Envogue — K2 Data"},
+{tag:"K1 Comparison", q:"K1 ke 4 series (1,2,3,4) mein sabse zyada units kis series mein hain?", opts:["Series 1 (23)","Series 4 (24)","Series 2 (19)","Series 3 (20)"], correct:1, explain:"Series 4 mein sabse zyada units hain — 24. Series 2 mein sabse kam — 19.", page:"Tayal Envogue — K1 Data"},
+{tag:"K1 Comparison", q:"K1 ke 4 series mein sabse kam units kis series mein hain?", opts:["Series 1 (23)","Series 3 (20)","Series 2 (19)","Series 4 (24)"], correct:2, explain:"Series 2 mein sabse kam units hain — 19 (4 refuge floor flats exclude hone ki wajah se).", page:"Tayal Envogue — K1 Data"},
+{tag:"K2 Typical Floor", q:"K2 ke typical floors par saari 4 positions (01,02,03,04) ka carpet area same hai ya alag?", opts:["Alag-alag hota hai har position ka","Sirf 2 positions same hoti hain","Yeh data available nahi hai","Same hai — saari 4 positions 1265 sq.ft ki hoti hain typical floors par"], correct:3, explain:"K2 ke typical floors (3-6,8-11,13-16 etc.) par saari 4 positions ka carpet area same hai — 1265 sq.ft.", page:"Tayal Envogue — K2 Data"},
+{tag:"K2 vs K1", q:"Kya K2 mein standard (non-refuge) floors par koi 2 BHK unit hai?", opts:["Nahi — K2 ke standard/typical floors par sirf 3 BHK (1265 sq.ft) hai, 2 BHK sirf refuge floors par hi milta hai","Haan, har floor par 2 BHK bhi hai","Haan, position 01 hamesha 2 BHK hoti hai","K2 mein koi 3 BHK hai hi nahi"], correct:0, explain:"K2 ke typical floors par sirf 3 BHK hai (1265 sq.ft, saari 4 positions). 2 BHK sirf refuge floors par milta hai (1049 sq.ft). Yeh K1 se ulta hai, jahan 2BHK standard hai aur 3BHK refuge par 2BHK ban jaata hai.", page:"Tayal Envogue — K2 Data"},
+{tag:"K1 vs K2 Feature", q:"Individual terrace wali feature (ground floor units ke liye) kis wing mein hai — K1 ya K2?", opts:["K1 mein","K2 mein — ground floor flats 101-104 ka apna individual terrace hai","Dono mein hai","Kisi mein nahi hai"], correct:1, explain:"Yeh feature sirf K2 mein hai — ground floor units (101-104) ka apna alag terrace hai (342 se 521 sq.ft tak). K1 mein aisi koi feature mention nahi hai.", page:"Tayal Envogue — K2 Data"},
+{tag:"K1 Room Comparison", q:"K1 ke 2 BHK aur 3 BHK dono types mein, kaunse rooms EXACTLY same size ke hote hain?", opts:["Sirf Kitchen","Sirf Entrance Lobby","Living Room, Master Bedroom, Bedroom 01, dono Balconies, dono Toilets","Koi bhi room same nahi hota"], correct:2, explain:"Living Room (10'6\"x16'6\"), Master Bedroom (10'2\"x11'3\"), Bedroom 01 (10'1\"x11'0\"), dono Balconies, aur dono Toilets — yeh sab 2BHK aur 3BHK mein same size ke hain. Sirf Kitchen aur Entrance Lobby size mein farak hai (3BHK mein bada) — aur 3BHK mein extra Bedroom 02 bhi hoti hai.", page:"Tayal Envogue — K1 Data"},
+{tag:"K2 Room Comparison", q:"K2 ke 3 BHK aur Refuge Floor 2 BHK mein, Suite 02 ka kya status hai?", opts:["Suite 02 sirf 3 BHK mein hoti hai","Suite 02 dono mein alag size ki hai","Suite 02 refuge 2BHK mein missing hai","Suite 02 dono types mein present hai, same size (12'0\"x13'0\") ke saath"], correct:3, explain:"Suite 02 (12'0\"x13'0\") dono 3 BHK aur Refuge Floor 2 BHK versions mein present hai, same size ke saath. Sirf Suite 03 hi missing hoti hai refuge 2BHK mein — yehi 3BHK ko 2BHK banata hai.", page:"Tayal Envogue — K2 Data"},
+{tag:"K2 Room Comparison", q:"K2 ke 3 BHK mein Suite 03 hoti hai, jo Refuge Floor 2 BHK mein missing hai. Iska matlab kya hai?", opts:["Suite 03 hi wo teesra bedroom hai jo remove hone se unit 3BHK se 2BHK ban jaata hai","Suite 03 ek storage room hai, koi bedroom nahi","Suite 03 dono types mein hoti hai, naam alag hai","Yeh printing error hai"], correct:0, explain:"Suite 03 (11'6\"x13'0\") 3BHK ka teesra bedroom hai. Refuge floor par yeh room remove ho jaata hai, jisse unit 2BHK ban jaata hai.", page:"Tayal Envogue — K2 Data"},
+{tag:"K1 Calculation", q:"Agar plan mein 2BHK ka carpet area 800 sq.ft diya hai, aur site par (-) 3% tak kam ho sakta hai, toh minimum kitna carpet area ho sakta hai actual site par?", opts:["780 sq.ft","776 sq.ft","790 sq.ft","770 sq.ft"], correct:1, explain:"800 sq.ft ka 3% = 24 sq.ft. 800 - 24 = 776 sq.ft minimum possible.", page:"Tayal Envogue — K1 Data (calculation)"},
+{tag:"K1 Calculation", q:"Agar plan mein 3BHK ka carpet area 916 sq.ft diya hai, aur site par (+) 3% tak zyada ho sakta hai, toh maximum kitna ho sakta hai (nearest whole number)?", opts:["940 sq.ft","950 sq.ft","943 sq.ft","930 sq.ft"], correct:2, explain:"916 sq.ft ka 3% = 27.48 sq.ft. 916 + 27.48 = 943.48, yaani lagbhag 943 sq.ft maximum possible.", page:"Tayal Envogue — K1 Data (calculation)"},
+{tag:"K1 Series Comparison", q:"K1 mein Series 2 aur Series 3, dono 3 BHK hain aur mirror layout hain. Inke room sizes mein kya farak hai?", opts:["Sabhi room sizes alag hain","Sirf carpet area alag hai","Series 3 mein extra room hoti hai","Room sizes same hain, sirf orientation mirror (flip) hai"], correct:3, explain:"Series 2 aur Series 3 mirror layout hain — room dimensions bilkul same hain, sirf layout ki direction/orientation flip hoti hai. Carpet area bhi same hai — 916 sq.ft dono ka.", page:"Tayal Envogue — K1 Data"},
+{tag:"K2 Room Comparison", q:"K2 ke Master Suite 01 ka size (11'9\"x14'0\") 3 BHK aur Refuge Floor 2 BHK dono mein same hai kya?", opts:["Haan, dono types mein exactly same hai","Nahi, refuge mein chhota ho jaata hai","Sirf carpet area ke hisaab se badalta hai","Yeh data available nahi hai"], correct:0, explain:"Master Suite 01 (11'9\"x14'0\") dono 3BHK aur Refuge 2BHK mein same size ka hai — jo rooms remove nahi hote, unki size change nahi hoti.", page:"Tayal Envogue — K2 Data"},
+{tag:"K1 Toilet Comparison", q:"K1 mein Common Toilet aur Attached (Master) Toilet mein kaunsa bada hai?", opts:["Common Toilet bada hai","Attached (Master) Toilet bada hai — 8'0\"x4'6\" vs Common ka 7'6\"x4'6\"","Dono same size ke hain","Yeh depend karta hai 2BHK ya 3BHK par"], correct:1, explain:"Attached (Master) Toilet 8'0\"x4'6\" hai, jo Common Toilet (7'6\"x4'6\") se thoda bada hai — dono 2BHK aur 3BHK mein consistent.", page:"Tayal Envogue — K1 Data"},
+{tag:"K1 Total Units", q:"K1 ke 4 series (1,2,3,4) ke total units jodne par (23+19+20+24) kitna aata hai?", opts:["82","90","86","94"], correct:2, explain:"23 (Series1) + 19 (Series2) + 20 (Series3) + 24 (Series4) = 86 total units jo currently 2BHK ya 3BHK hain (refuge floor ke 2BHK units alag se count hote hain).", page:"Tayal Envogue — K1 Data (calculation)"},
+{tag:"K1 Refuge Total", q:"K1 mein total kitne units refuge floor exception se affected hote hain (4 floors x 2 positions)?", opts:["4 units","12 units","16 units","8 units"], correct:3, explain:"4 refuge floors (17,22,27,32) x 2 positions (02 aur 03) = 8 units jo 3BHK se 2BHK ban jaate hain.", page:"Tayal Envogue — K1 Data (calculation)"},
+{tag:"K1 Scenario Hard", q:"Ek customer K1 mein floor 22 par 3 BHK dhoondh raha hai, specifically position 02 ya 03 mein. Kya yeh possible hai?", opts:["Nahi — floor 22 refuge floor hai, isliye position 02 aur 03 dono par sirf 2BHK (802 sq.ft) milega, 3BHK nahi","Haan, position 02 aur 03 dono floor 22 par 3BHK hi hote hain","Sirf position 02 par milega, 03 par nahi","Yeh data available nahi hai"], correct:0, explain:"Floor 22 refuge floors ki list mein hai. Isliye position 02 aur 03 dono par 3BHK available nahi hai us floor par — sirf 2BHK, 802 sq.ft milega. Agar customer ko specifically 3BHK chahiye position 02/03 mein, toh koi doosra floor suggest karna hoga.", page:"Tayal Envogue — K1 Data"},
+{tag:"K1 Scenario Hard", q:"Ek customer poore Wing K1 mein sabse bada unit dekhna chahta hai. Kya recommend karoge?", opts:["2 BHK Series 1, 800 sq.ft","3 BHK Series 2 ya 3, 916 sq.ft — K1 ka sabse bada available unit type","2 BHK Refuge, 802 sq.ft","4 BHK, 1200 sq.ft"], correct:1, explain:"K1 mein sirf 2 BHK (800/802 sq.ft) aur 3 BHK (916 sq.ft) available hain — koi 4BHK ya bada configuration nahi hai. 3 BHK, 916 sq.ft hi sabse bada option hai K1 mein.", page:"Tayal Envogue — K1 Data"},
+{tag:"K1 Position Total", q:"K1 mein position '02' ke total floor-slots (19 jo 3BHK hain + 4 jo refuge 2BHK hain) kitne aate hain?", opts:["19","20","23","24"], correct:2, explain:"19 (3BHK) + 4 (refuge 2BHK) = 23 total floor-slots position 02 ke liye.", page:"Tayal Envogue — K1 Data (calculation)"},
+{tag:"K1 Position Total", q:"K1 mein position '03' ke total floor-slots (20 jo 3BHK hain + 4 jo refuge 2BHK hain) kitne aate hain?", opts:["20","23","19","24"], correct:3, explain:"20 (3BHK) + 4 (refuge 2BHK) = 24 total floor-slots position 03 ke liye.", page:"Tayal Envogue — K1 Data (calculation)"},
+{tag:"K2 Rooms", q:"K2 ke 2 BHK Refuge Floor unit mein Kitchen ka size 3 BHK se alag hai ya same?", opts:["Same hai — 14'4\" x 9'6\", dono types mein","Alag hai, chhota ho jaata hai","Kitchen hoti hi nahi refuge 2BHK mein","Data available nahi hai"], correct:0, explain:"Kitchen (14'4\"x9'6\") dono 3BHK aur Refuge 2BHK versions mein same size ki hai — sirf Suite 03 hi remove hoti hai, Kitchen nahi.", page:"Tayal Envogue — K2 Data"},
+{tag:"K1 Series Rooms", q:"K1 Series 2 aur Series 3, dono mein Entrance Lobby ka size kya hai?", opts:["5'7\" x 4'11\"","5'1\" x 4'11\"","5'8\" x 5'6\"","9'10\" x 5'9\""], correct:1, explain:"Series 2 aur Series 3 (dono 3BHK) mein Entrance Lobby 5'1\" x 4'11\" hai — 2BHK Series (5'7\"x4'11\") se chhoti.", page:"Tayal Envogue — K1 Data"}
 ];
 
 /* ============================================================
@@ -669,7 +692,7 @@ function renderQuestions(){
     card.className = 'q-card';
     card.innerHTML = `
       <div class="q-meta">
-        <div class="q-num">QUESTION ${qi+1} OF ${QUESTIONS.length} · 3 MARKS</div>
+        <div class="q-num">QUESTION ${qi+1} OF ${QUESTIONS.length} · 2 MARKS</div>
         <div class="q-tag">${item.tag}</div>
       </div>
       <div class="q-text">${item.q}</div>
@@ -771,7 +794,7 @@ function computeResult(){
       page: item.page
     };
   });
-  const marks = correctCount * 3;
+  const marks = correctCount * 2;
   const total = QUESTIONS.length * 2;
   const pct = Math.round((marks/total)*100);
   return {correctCount, wrongCount: QUESTIONS.length - correctCount, marks, total, pct, detail};
